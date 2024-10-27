@@ -29,7 +29,7 @@ const contactsPath = './db/contacts.json';
                 const newContactList =contacts.filter(contact => contact.id!==contactId)
                 const newContactListJson = JSON.stringify(newContactList)
                 console.log(newContactList)
-                //fs.writeFile(contactsPath, newContactListJson)
+                fs.writeFile(contactsPath, newContactListJson)
             })
 
          
@@ -47,7 +47,7 @@ const contactsPath = './db/contacts.json';
                 const newContactList = [...contacts, newContact]
                 const newContactListJson = JSON.stringify(newContactList)
                 console.log(newContactList)
-                //fs.writeFile(contactsPath, newContactListJson)
+                fs.writeFile(contactsPath, newContactListJson)
             })
   }
 
